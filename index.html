@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src = "airtable.browser.js" defer></script>
+    <script src="airScript.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -11,14 +12,12 @@
     <button><img id ="button" src= "arrow.png"></button>
     <main>
     <section id="left">
-    <h1 id="title1">Weathering with Mars</h1>
-    <p>A voice-activated Mars weather assistance, using the P5speech.js library and the information from NASA Insight API. With a simplistic yet animated illustrations, the bot will travel with you to Mars and chat with you about the temperature, time, wind-speed and more information about Mars. This project mainly targets children and younger teenagers, being envisioned in settings like museum interactive displays or educational websites.</p>
+    <h1 id="title1"></h1>
+    <p id="time"></p>
+    <p id="summary"> </p>
+    <p id="description"></p>
 </section>
-    <section id="right">
-    <img src="withMars/marsIntro.png">
-    <img src="withMars/marsOpenning.png">
-    <img src="withMars/marsInProgress.png">
-</section>
+    <section id="right"></section>
 </main>
 </body>
 </html>

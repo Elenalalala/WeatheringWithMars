@@ -1,0 +1,169 @@
+:root {
+    --bg: white;
+    --maincolor:black; 
+    --secondary: black;
+  }
+*{
+    padding:0;
+    margin:0;
+    cursor: default;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+html{
+    background-color: var(--bg);
+    color:var(--maincolor);
+    width: 5000px;
+    /* scroll-behavior: smooth; */
+
+}
+header{
+    position: fixed;
+    /* border-bottom: 4px solid var(--secondary); */
+    margin-top: 0;
+    width: 100%;
+    background-color: var(--maincolor);
+    color:var(--bg);
+}
+header h1{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding:1em 2em;
+}
+#work a{
+    text-decoration: none;
+    color:black;
+}
+#work a:hover{
+    color:white;
+}
+section{
+    position: relative;
+    top:200px;
+    /* scroll-direction: horizontal; */
+    /* overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap; */
+    scroll-behavior: smooth;
+}
+.inline-container{
+    display:flex;
+    width: 100%;
+}
+.inline-container .page{
+    width:1500px;
+    height:600px;
+    border:black 1px double;
+    margin:0 100px; 
+}
+
+.inline-container #home{
+    display:flex;
+}
+.inline-container #home #text-container{
+    flex:1;
+    padding-left: 15px;
+}
+.inline-container #home #text-container h2{
+    font-size: 100px;
+}
+.inline-container #home #feature-container{
+    flex:2.5;
+}
+.inline-container #home #text-container h3{
+    font-size:20px;
+    margin-top:30px;
+    margin-left: 10px;
+}
+#text-container p{
+    font-size:18px;
+    margin-left: 10px;
+}
+.inline-container #home #feature-container img{
+    padding-left:5%;
+    width:95%;
+    height:100%;
+    object-fit: cover;
+}
+.inline-container #work{
+    display:flex;
+    flex-direction: column;
+}
+.inline-container #work div{
+    flex:1;
+    text-align: center;
+    margin: 20px 0;
+    padding-top:60px;
+}
+.inline-container #work div, .inline-container #work div h2{
+    cursor: pointer;;
+}
+.inline-container #work div:hover{
+    background-color: var(--maincolor);
+    color: var(--bg);
+}
+.inline-container #work #design:hover{
+    background-image: url('../assets/DTNav.gif');
+    /* background-repeat: no-repeat; */
+    background-size: fill;
+}
+.inline-container #work #graphics:hover{
+    background-image: url('../assets/visualNav.png');
+    background-size: fill;
+}
+.inline-container #work #experienments:hover{
+    background-image: url('../assets/experiNav.jpg');
+    background-size: cover;
+    font-weight: 700;
+}
+nav{
+    position: fixed;
+    bottom:0;
+    width:100%;
+}
+ul{
+    display:flex;
+    list-style: none;
+    max-width: 25%;
+    margin: auto;
+    translate: 2s;
+}
+li{
+    font-size: 20px;
+    margin: 0 10% 10% 10%;
+    padding: 10px 0px;
+}
+li a{
+    color:black;
+    text-decoration: none;
+    padding:2px 10px;
+}
+li a:hover{
+    background-color: var(--maincolor);
+    color: var(--bg);
+    transition: 0.2s;
+    cursor: pointer;
+}
+#contact ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+#contact ul li{
+    flex:1;
+    width:500px;
+    display:flex;
+}
+#contact ul li img{
+    width:30px;
+    height:30px;
+}
+#contact ul li p{
+    font-family: 'Alegreya Sans', sans-serif;
+    text-transform: lowercase;
+    margin: 5px 40px;
+}
